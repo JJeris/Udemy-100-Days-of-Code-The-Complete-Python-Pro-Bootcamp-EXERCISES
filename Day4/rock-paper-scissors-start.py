@@ -28,9 +28,9 @@ scissors = '''
 #Write your code below this line 👇
 import random
 user_input = int(input("What do you choose? 0 = Rock, 1 = Paper, 2 = Scissors."))
-while(user_input!=0 and user_input!=1 and user_input!=2):
+while(user_input<0 or user_input>2):
     print("Invalid input")
-    user_input = input("What do you choose? 0 = Rock, 1 = Paper, 2 = Scissors.")
+    user_input = int(input("What do you choose? 0 = Rock, 1 = Paper, 2 = Scissors."))
 arr_of_choices = [rock, paper, scissors]
 computers_choice = random.randint(0,2)
 print(arr_of_choices[user_input])
