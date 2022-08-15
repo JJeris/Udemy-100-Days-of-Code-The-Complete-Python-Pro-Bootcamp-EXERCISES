@@ -51,13 +51,15 @@ arr.pop(-1)
 random.shuffle(arr)
 
 output = ""
-arr_len = len(arr)-1
+# arr_len = len(arr)-1
 
-while arr:
-    gen_index = random.randint(0, arr_len)
-    output+=arr[gen_index]
-    arr.remove(arr[gen_index])
-    arr_len-=1
+for r in arr:
+# while arr:
+    # gen_index = random.randint(0, arr_len)
+    # output+=arr[gen_index]
+    # arr.remove(arr[gen_index])
+    # arr_len-=1
+    output+=r
 print(output)  
     
 
